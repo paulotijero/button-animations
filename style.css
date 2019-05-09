@@ -61,9 +61,8 @@ body {
   background-color: #1c8bcb;
   width: 0;
   height: 50px;
-  animation-name: ending-bounce;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 1s;
 }
 .box-2:hover {
   cursor: pointer;
@@ -72,19 +71,15 @@ body {
 .box-2:hover .bounce-right {
   background-color: #1c8bcb;
   width: 180px;
-  animation-name: starting-bounce;
+  animation-name: bounce;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
-@keyframes starting-bounce {
+@keyframes bounce {
   0% { width: 0; }
   50% { width: 100%; }
   90% { width: 90%; }
   100% { width: 100%; }
-}
-@keyframes ending-bounce {
-  0% { width: 100%; }
-  100% { width: 0%; }
 }
 .box-3:hover {
   cursor: pointer;
@@ -104,27 +99,21 @@ body {
   100% { transform: rotate(0deg); }
 }
 .box-4 {
-  /* margin: auto; */
-  animation-name: ending-bounce-in;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 1s;
 }
 .box-4:hover {
   cursor: pointer;
   width: 190px; 
   height: 60px; 
   font-size: 22px;
-  animation-name: starting-bounce-in;
+  animation-name: bounce-in;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
-@keyframes starting-bounce-in {
+@keyframes bounce-in {
   0% { width: 180px; height: 50px; font-size: 16px; }
   50% { width: 190px; height: 60px; font-size: 22px; }
   90% { width: 185px; height: 55px; font-size: 20px; }
   100% { width: 190px; height: 60px; font-size: 22px; }
-}
-@keyframes ending-bounce-in {
-  0% { width: 190px; height: 60px; font-size: 22px; }
-  100% { width: 180px; height: 50px; font-size: 16px; }
 }
