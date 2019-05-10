@@ -42,7 +42,7 @@ body {
   width: 0;
   height: 5px;
   transition-property: all;
-  transition-duration: 1.2s;
+  transition-duration: 0.75s;
   transition-timing-function: ease-in-out;
 }
 .box-1:hover {
@@ -54,7 +54,7 @@ body {
 }
 .box-2 {
   transition-property: color;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 .bounce-right {
