@@ -1,7 +1,5 @@
 # Button Animations
 
-<!-- ![license](https://github.com/paulotijero/css-animations/blob/master/LICENSE) -->
-
 Button Animations it's a library for buttons animations
 
 ## Collection
